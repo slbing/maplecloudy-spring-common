@@ -1,0 +1,3 @@
+org.springframework.context.ApplicationContextInitializer=\
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.maplecloudy.common.lock.LockAspect
