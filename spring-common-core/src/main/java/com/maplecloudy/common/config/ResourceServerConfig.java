@@ -86,7 +86,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
         .sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED).and()
         .headers().frameOptions().disable().and().authorizeRequests()
         .antMatchers(securityProperties.getIgnoreUrls())
-        .permitAll().and().authorizeRequests().antMatchers(HttpMethod.GET, "/materialoutlink**").permitAll().anyRequest();
+        .permitAll().and().authorizeRequests().anyRequest();
     setAuthenticate(authorizedUrl);
     http.oauth2ResourceServer().jwt();
   }

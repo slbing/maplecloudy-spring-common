@@ -35,11 +35,8 @@ import static org.springdoc.core.Constants.API_DOCS_URL;
 
 @Service("permissionService")
 public class PermissionRoleOpenAPITagImpl {
-  @Autowired
-  RoleRepo roleRepo;
+  
 
-  @Autowired
-  UserRepo userRepo;
   @Autowired
   OpenAPI customOpenAPI;
   @Autowired
